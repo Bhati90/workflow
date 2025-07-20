@@ -107,9 +107,9 @@ const WorkflowBuilder: React.FC<WorkflowBuilderProps> = ({ stackId, onBack }) =>
       case 'User Query':
         return { placeholder: 'Enter your query here' };
       case 'Knowledge Base':
-        return { embeddingModel: 'text-embedding-3-small', apiKey: '' };
+        return { embeddingModel: 'gemini-1.5-flash', apiKey: 'AIzaSyCNobx-IMPargYRC5nc42WUQKDdVuc8B7k' };
       case 'LLM (OpenAI)':
-        return { model: 'GPT 4o - Mini', apiKey: '', prompt: '', temperature: 0.75 };
+        return { model: 'gemini-1.5-flash', apiKey: 'AIzaSyCNobx-IMPargYRC5nc42WUQKDdVuc8B7k', prompt: '', temperature: 0.75 };
       case 'Output':
         return {};
       default:
