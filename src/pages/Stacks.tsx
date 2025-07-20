@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import StackCard from '@/components/StackCard';
 import CreateStackDialog from '@/components/CreateStackDialog';
 import { useToast } from '@/hooks/use-toast';
+import LandingPage from '@/components/LandingPage';
 
 interface Stack {
   id: string;
@@ -100,6 +101,7 @@ const Stacks = () => {
           </div>
         </div>
       </div>
+      <LandingPage/>
 
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

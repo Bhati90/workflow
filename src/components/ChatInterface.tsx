@@ -52,7 +52,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ onClose, workflow }) => {
       // Get stack ID from workflow (assuming it's passed through props or context)
       const stackId = workflow.stackId || '1'; // fallback to '1' for testing
       
-      const response = await fetch(` https://workflow-nil5.onrender.com/workflows/${stackId}/execute`, {
+      const response = await fetch(`https://workflow-nil5.onrender.com/workflows/${stackId}/execute`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
