@@ -66,7 +66,7 @@ const ComponentConfigPanel: React.FC<ComponentConfigPanelProps> = ({
       formData.append('api_key', config.apiKey);
       formData.append('embedding_model', config.embeddingModel || 'text-embedding-3-small');
 
-      const response = await fetch(`http://localhost:8000/upload-file/${node.id}`, {
+      const response = await fetch(` https://workflow-nil5.onrender.com/upload-file/${node.id}`, {
         method: 'POST',
         body: formData,
       });

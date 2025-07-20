@@ -26,7 +26,7 @@ const Stacks = () => {
 
   const fetchStacks = async () => {
     try {
-      const response = await fetch('http://localhost:8000/stacks');
+      const response = await fetch(' https://workflow-nil5.onrender.com/stacks');
       if (response.ok) {
         const data = await response.json();
         setStacks(data);
@@ -38,7 +38,7 @@ const Stacks = () => {
 
   const handleCreateStack = async (name: string, description: string) => {
     try {
-      const response = await fetch('http://localhost:8000/stacks', {
+      const response = await fetch(' https://workflow-nil5.onrender.com/stacks', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

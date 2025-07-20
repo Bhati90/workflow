@@ -43,7 +43,7 @@ const WorkflowBuilder: React.FC<WorkflowBuilderProps> = ({ stackId, onBack }) =>
 
   const loadWorkflow = async () => {
     try {
-      const response = await fetch(`http://localhost:8000/workflows/${stackId}`);
+      const response = await fetch(` https://workflow-nil5.onrender.com/workflows/${stackId}`);
       if (response.ok) {
         const workflow = await response.json();
         if (workflow && workflow.nodes && workflow.edges) {
@@ -177,7 +177,7 @@ const WorkflowBuilder: React.FC<WorkflowBuilderProps> = ({ stackId, onBack }) =>
     }
 
     try {
-      const response = await fetch('http://localhost:8000/workflows/', {
+      const response = await fetch(' https://workflow-nil5.onrender.com/workflows/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -218,7 +218,7 @@ const WorkflowBuilder: React.FC<WorkflowBuilderProps> = ({ stackId, onBack }) =>
     }
 
     try {
-      const response = await fetch('http://localhost:8000/workflows/build', {
+      const response = await fetch(' https://workflow-nil5.onrender.com/workflows/build', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
