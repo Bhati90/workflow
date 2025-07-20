@@ -26,7 +26,7 @@ app = FastAPI(title="GenAI Stack Builder API", version="1.0.0")
 # CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://workflow-ochre.vercel.app"]
+    allow_origins=["https://workflow-ochre.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
